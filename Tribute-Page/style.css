@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body::-webkit-scrollbar {
+    width: 1.4rem;
+    }
+    body::-webkit-scrollbar-track {
+        background:transparent;
+    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+    }
+    body::-webkit-scrollbar-thumb {
+    background: var(--background);
+    outline: 1px solid rgb(0, 255, 34);
+    }
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: white;
+    
+    background: linear-gradient(to top , orange,white,green)no-repeat;
+}
+:root{
+    --page-padding: 1rem 9rem ;
+    --page-color: rgb(245 241 255 / 63%);
+    --page-margin:3rem 12rem;
+    --color:#46494c;
+    --background: linear-gradient(to right   ,orange,white,green);
+}
+h1{
+    font-size: 3.5rem;
+    line-height: 5rem;
+}
+hr{ 
+    margin: 5rem 40%;
+    border-bottom: 1px solid;
+}
+main{
+    padding: var(--page-padding);
+    background-color: var(--page-color);
+    margin: var(--page-margin);
+    border-radius: 1rem;
+    color: var(--color);
+}
+
+
+/* navbar */
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 4rem 0 8rem;
+}
+.navbar .icon{
+    font-size: 2rem;
+    display: none;
+}
+.ul{
+    display: flex;
+    position: relative;
+    list-style: none;
+    
+}
+.ul li{
+    margin: 2rem ;
+    transition: .8s ;
+    cursor: pointer;
+    
+}
+
+
+.ul li a{
+    padding: 2rem;
+    
+    font-size: 1.9rem;
+    color: var(--color);
+    padding-bottom: 1.5rem;
+    
+    
+}
+.ul li:hover{
+  transform:scale(1.01)
+  rotate(360deg);
+  
+    
+}
+.ul li a:hover{
+    border-bottom: 1px solid green;
+    color: rgb(0, 0, 0);
+
+}
+
+
+/* About */
+
+
+.main{
+display: flex;
+justify-content: center;
+gap: 2rem;
+flex-wrap: wrap;
+margin-top: 6rem;
+}
+.main div{
+   
+    display: flex;
+    flex: 1;
+    min-height: 30rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.name p{
+    font-size: 2rem;
+    width: 80%;
+    line-height: 3rem;  
+    margin: 2rem 0;
+}
+
+.profile{
+align-items: center;
+}
+.profile img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile h2{
+    margin-top: 2rem ;
+}
+
+
+
+
+/* Introduction */
+
+
+
+.intro h1,.about h2{
+    text-align: center;
+}
+.intro h2{
+    font-size: 2.3rem;
+    margin: 3rem ;
+}
+.intro .summary{
+    margin: 4rem 0;
+    font-size: 1.5rem ;
+    line-height: 3rem;
+}
+.ranks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.ranks ul li{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+
+}
+.ranks ul li span{
+    font-weight: bold;
+}
+
+
+/* Honours*/
+
+
+.honours{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.container h1{
+    text-align: center;
+}
+.honours div{
+    flex: 1 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.medals img{
+    height:200px;
+    width: 200px;
+    object-fit:contain;
+    transition: 0.7s;
+}
+.medals img:hover{
+    transform:scale(1.3)
+}
+.medals p{
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem ;
+    font-weight: 700;
+}
+
+/* Quote */
+
+.quote{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background:var(--background);
+    padding: 4rem;
+    margin: 4rem 0;
+    border-radius: 1rem;
+}
+.quote p{
+    font-size: 2rem;
+    line-height: 3rem;
+}
+.quote p span{
+    font-weight: bold;
+}
+.quote span:nth-child(2){
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2rem ;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    margin: 2rem ;
+    color: #ffffff;
+    font-weight: bold;
+}
+.footer p{
+    font-size: 2rem;
+
+}
+.footer p a{
+    color: #ffffff;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:999px) {
+    html{font-size: 55%;}
+  .navbar ul li{
+    margin: 1rem 
+  }  
+}
+@media screen and (max-width:887px) {
+    :root{
+        --page-padding:  4rem;
+        --page-margin:2rem ;
+       
+    }
+    html{font-size: 55%;}
+    .navbar{
+        margin: 0 1rem;
+        /* border: 2px solid; */
+    }
+  .navabr ul{
+    text-align: center;
+    
+  }
+  .main{
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+  }
+  .main div{
+    min-height: 20rem;
+  }
+  .main p{
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+}
+@media screen and (max-width:490px) {
+    html{
+        font-size: 45%;
+    }
+  
+    .profile img{
+        height:210px;
+        width: 210px;
+    }
+    .medals img{
+        width: 180px;
+        
+    }
+    .summary{
+        text-align: center;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+   
+    .ul{
+        text-align: center;
+        flex-direction: column;
+        margin: 0;
+        display: none;
+        transition: all 0.7s ease;
+       }
+       .ul li{
+        padding: 1rem 0;
+       }
+       .navbar ul li:hover{
+        transform:none;
+        
+          
+      }
+      .navbar ul li a:hover{
+          border-bottom:none;
+          color: rgb(0, 0, 0);
+      
+      }
+       .active{
+        display: block;
+    }
+    
+       .navbar .icon{
+        display: flex;
+        margin: 2rem 0 4rem;
+        font-size: 4rem;
+    }
+       
+    
+}
+
+@media screen and (max-width:357px){
+  
+}
