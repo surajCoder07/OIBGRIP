@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+html{
+    font-size: 62.5%;
+}
+body{
+
+    background-color: #55E6C1;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+ h1{
+    font-size: 4rem;
+    margin: 1rem;
+    color: white;
+    text-align: center;
+}
+.container{
+background-color: white;
+height: 40rem;
+width: 45rem;
+padding: 2rem;
+overflow: scroll;
+border-radius: 2px;
+}
+#box{
+    width: 100%;
+    font-size: 1.7rem;
+    outline: none;
+    border: none;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    box-shadow: 0 0 5px grey;
+    border-radius: 2px;
+
+}
+.input-container{
+display: flex;
+justify-content: space-between;
+}
+.btn{
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    color: white;
+    background-color: #0984e3;
+    border-radius: 2px;
+    cursor: pointer;
+    transition-duration: 0.7s;
+}
+.btn:hover{
+background-color: rgba(225,225,225,0.2);
+color: #0984e3;
+outline: 1px solid;
+}
+.container ul li{
+    background-color: #2C3A47;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    padding-right: 3rem;
+    text-align: justify;
+    color: white;
+    user-select: none;
+    position: relative;
+    border-radius: 2px;
+    
+    
+
+}
+.container ul li i{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    cursor: pointer;  
+    transition-duration: 0.5s;
+}
+.container ul li i:hover{
+    transform: rotate(360deg);
+}
+.complete{
+    background-color: #608ab6   !important;
+    text-decoration: line-through;
+    color: rgb(198, 227, 252) !important;
+}
+@media (max-width:500px) {
+    html{
+        font-size: 50%;
+    }
+    .container{
+        margin: 0 4rem;
+        height: 60rem;
+        width: 40rem;
+    }
+    .container ul li i{
+        top: 12px;
+    }
+}
